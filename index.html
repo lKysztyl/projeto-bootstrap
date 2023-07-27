@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg sticky-top">
                 <a href="#" class="navbar-brand">Lorem IPizza</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <span class="navbar-toggler-icon"></span>
@@ -34,6 +34,66 @@
             </nav>
         </div>
     </header>
+    <main>
+        <div class="container" data-bs-spy="scroll" data-bs-target="#nav-example" data-bs-smooth-scroll="true">
+            <section id="carousel">
+                <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <picture>
+                                <source srcset="http://via.placeholder.com/1350x650" class="img-fluid d-block w-100" type="image/svg+xml" media="(min-width: 1200px)">
+                                <source srcset="http://via.placeholder.com/990x550" class="img-fluid d-block w-100" type="image/svg+xml" media="(min-width: 990px)">
+                                <source srcset="http://via.placeholder.com/750x450" class="img-fluid d-block w-100" type="image/svg+xml" media="(min-width: 750px)">
+                                <source srcset="http://via.placeholder.com/575x350" class="img-fluid d-block w-100" type="image/svg+xml">
+                                <img src="http://via.placeholder.com/130x650" class="img-fluid d-block w-100" alt="image desc">
+                            </picture>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                <p>Consectetur adipisicing elit quis aliquid accusamus cumque modi facere.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="http://via.placeholder.com/1350x650" class="img-fluid d-block w-100" type="image/svg+xml" media="(min-width: 1200px)">
+                                <source srcset="http://via.placeholder.com/990x550" class="img-fluid d-block w-100" type="image/svg+xml" media="(min-width: 990px)">
+                                <source srcset="http://via.placeholder.com/750x450" class="img-fluid d-block w-100" type="image/svg+xml" media="(min-width: 750px)">
+                                <source srcset="http://via.placeholder.com/575x350" class="img-fluid d-block w-100" type="image/svg+xml">
+                                <img src="http://via.placeholder.com/130x650" class="img-fluid d-block w-100" alt="image desc">
+                            </picture>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                <p>Consectetur adipisicing elit quis aliquid accusamus cumque modi facere.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="http://via.placeholder.com/1350x650" class="img-fluid d-block w-100" type="image/svg+xml" media="(min-width: 1200px)">
+                                <source srcset="http://via.placeholder.com/990x550" class="img-fluid d-block w-100" type="image/svg+xml" media="(min-width: 990px)">
+                                <source srcset="http://via.placeholder.com/750x450" class="img-fluid d-block w-100" type="image/svg+xml" media="(min-width: 750px)">
+                                <source srcset="http://via.placeholder.com/575x350" class="img-fluid d-block w-100" type="image/svg+xml">
+                                <img src="http://via.placeholder.com/130x650" class="img-fluid d-block w-100" alt="image desc">
+                            </picture>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                <p>Consectetur adipisicing elit quis aliquid accusamus cumque modi facere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
