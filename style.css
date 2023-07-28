@@ -1,3 +1,11 @@
 .card-footer {
     border-top: none;
 }
+
+.card-body > h5 {
+    font-size: 0.9rem;
+}
+
+.card-body > p {
+    font-size: 0.7rem;
+}
