@@ -11,7 +11,7 @@
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg sticky-top">
-                <a href="#" class="navbar-brand">Lorem IPizza</a>
+                <a href="#" class="navbar-brand">Lorem's Pizza</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -90,6 +90,58 @@
                     <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
+                </div>
+            </section>
+            <section id="pizzas">
+                <div class="mt-5">
+                    <h2 class="mb-3">Pizzas</h2>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="grande" data-bs-toggle="tab" data-bs-target="#grande-pane" type="button" role="tab" aria-controls="grande-pane" aria-selected="true">Grande</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="media-tab" data-bs-toggle="tab" data-bs-target="#media-tab-pane" type="button" role="tab" aria-controls="media-tab-pane" aria-selected="false">Media</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pequena-tab" data-bs-toggle="tab" data-bs-target="#pequena-tab-pane" type="button" role="tab" aria-controls="pequena-tab-pane" aria-selected="false">Pequena</button>
+                            </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active mt-3" id="grande-pane" role="tabpanel">
+                            <div class="row row-cols-2">
+                                <div class="col card my-3 mx-3 g-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                                <p class="card-text">Consectetur adipisicing elit.</p>
+                                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="http://via.placeholder.com/350x350" class="img-fluid rounded-end" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col card my-3 mx-3 g-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                                <p class="card-text">Consectetur adipisicing elit.</p>
+                                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="http://via.placeholder.com/350x350" class="img-fluid rounded-end" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="media-tab-pane" role="tabpanel">...</div>
+                        <div class="tab-pane fade" id="pequena-tab-pane" role="tabpanel">...</div>
+                    </div>
                 </div>
             </section>
         </div>
