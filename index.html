@@ -8,34 +8,32 @@
     <title>Projeto Bootstrap 5</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg sticky-top">
-                <a href="#" class="navbar-brand">Lorem's Pizza</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbar">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pizzas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hamburguers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Bebidas</a>
-                        </li>
-                    </ul>
-                </div>
+    <header id="header" class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+            <a href="#header" class="navbar-brand">Lorem's Pizza</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-center" id="navbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pizzas">Pizzas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hamburguers">Hamburguers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bebidas">Bebidas</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="container" data-bs-spy="scroll" data-bs-target="#nav-example" data-bs-smooth-scroll="true">
+        <div class="container" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true">
             <section id="carousel">
                 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
