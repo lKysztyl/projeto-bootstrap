@@ -1,3 +1,20 @@
+:root {
+    --cor01: #FD7E14;
+    --cor02: #000000;
+    --cor03: #FFFFFF;
+    --cor04: #D52941;
+    --cor05: #3A6EA5;
+}
+
+.bg-cor01 {
+    background-color: var(--cor01);
+}
+
+.nav > .nav-item > .nav-link.active {
+    background-color: var(--cor03);
+    color: var(--cor04);
+}
+
 .card-footer {
     border-top: none;
 }

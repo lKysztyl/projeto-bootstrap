@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Projeto Bootstrap 5</title>
 </head>
-<body>
-    <header id="header" class="navbar navbar-expand-lg sticky-top">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true">
+    <div class="translate-middle" id="topPage"></div>
+    <header id="header" class="navbar navbar-expand-lg sticky-top bg-cor01">
     <div class="container">
-            <a href="#header" class="navbar-brand">Lorem's Pizza</a>
+            <a href="#main" class="navbar-brand text-light">Lorem's Pizza</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="collapse navbar-collapse justify-content-center" id="navbar">
-                <ul class="navbar-nav ">
+                <ul class="nav navbar-nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#header">Home</a>
+                        <a class="nav-link active text-cor" href="#carousel">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#pizzas">Pizzas</a>
@@ -32,8 +33,8 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div class="container" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true">
+    <main id="main">
+        <div class="container">
             <section id="carousel">
                 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -1019,13 +1020,13 @@
                     <h2 class="mb-3">Bebidas</h2>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="refrigerantes" data-bs-toggle="tab" data-bs-target="#refrigerantes-pane" type="button" role="tab" aria-controls="refrigerantes-pane" aria-selected="true">Refrigerantes</button>
+                            <button class="nav-link active " id="refrigerantes" data-bs-toggle="tab" data-bs-target="#refrigerantes-pane" type="button" role="tab" aria-controls="refrigerantes-pane" aria-selected="true">Refrigerantes</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="vinhos-tab" data-bs-toggle="tab" data-bs-target="#vinhos-tab-pane" type="button" role="tab" aria-controls="vinhos-tab-pane" aria-selected="false">Vinhos</button>
+                            <button class="nav-link text-bg-danger" id="vinhos-tab" data-bs-toggle="tab" data-bs-target="#vinhos-tab-pane" type="button" role="tab" aria-controls="vinhos-tab-pane" aria-selected="false">Vinhos</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="sucos-naturais-tab" data-bs-toggle="tab" data-bs-target="#sucos-naturais-tab-pane" type="button" role="tab" aria-controls="sucos-naturais-tab-pane" aria-selected="false">Sucos Naturais</button>
+                            <button class="nav-link text-bg-success" id="sucos-naturais-tab" data-bs-toggle="tab" data-bs-target="#sucos-naturais-tab-pane" type="button" role="tab" aria-controls="sucos-naturais-tab-pane" aria-selected="false">Sucos Naturais</button>
                             </li>
                     </ul>
                     <div class="tab-content">
