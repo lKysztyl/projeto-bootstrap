@@ -18,6 +18,10 @@
     color: var(--cor04);
 }
 
+.card {
+    cursor: pointer;
+}
+
 .card-footer {
     border-top: none;
 }
