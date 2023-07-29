@@ -3,7 +3,7 @@
 }
 
 @media screen and (min-width: 767px) {
-    
+
     .card-body > h5 {
         font-size: 0.9rem;
     }
