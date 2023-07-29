@@ -9,6 +9,9 @@
 .bg-cor01 {
     background-color: var(--cor01);
 }
+.nav > .nav-item > .nav-link {
+    color: var(--cor03);
+}
 
 .nav > .nav-item > .nav-link.active {
     background-color: var(--cor03);
