@@ -4,6 +4,8 @@
     --cor03: #FFFFFF;
     --cor04: #D52941;
     --cor05: #3A6EA5;
+    --cor06: RGB(213, 41, 65, 0.3);
+
 }
 
 .bg-cor01 {
@@ -30,8 +32,9 @@
     cursor: pointer;
 }
 
-.a:hover {
-    color: #3A6EA5;
+.accordion-button, .accordion-button:not(.collapsed) {
+    background-color: var(--cor06);
+    color: var(--cor03);
 }
 
 @media screen and (min-width: 767px) {
