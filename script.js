@@ -11,5 +11,17 @@ $(document).ready(function() {
         $(this).text(price());
     });
 
-});
+    $('.card').attr('data-bs-toggle', 'modal');
+    $('.card').attr('data-bs-target', '#modal');
 
+    $('.card').on('click', function(e) {
+        const card_title = $(this).find('.card-title').text();
+
+        $('#form-modal').find('.card-title').text(card_title);
+
+    });
+
+    $('#form-modal').on('click', function() {
+
+    });
+});

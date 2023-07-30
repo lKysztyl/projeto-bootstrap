@@ -37,6 +37,12 @@
     color: var(--cor03);
 }
 
+@media screen and (min-width: 1200px) {
+    .mt-xl-45 {
+        margin-top: 1.7rem;
+    }
+}
+
 @media screen and (min-width: 767px) {
 
     .card-body > h5 {
