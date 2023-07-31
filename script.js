@@ -16,8 +16,16 @@ $(document).ready(function() {
 
     $('.card').on('click', function(e) {
         const card_title = $(this).find('.card-title').text();
+        const card_text = $(this).find('.card-text').first().text();
+        const card_price = $(this).find('.card-price').text();
 
         $('#form-modal').find('.card-title').text(card_title);
+        $('#form-modal').find('.card-text').first().text(card_text);
+        $('#form-modal').find('.card-price').text(card_price);
+
+        const picture = $(this).find('picture').first();
+        const patchClone = picture.clone();
+        $('.card-text').last().append(patchClone);
 
     });
 
