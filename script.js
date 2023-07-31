@@ -25,7 +25,7 @@ $(document).ready(function() {
 
         const picture = $(this).find('picture').first();
         const patchClone = picture.clone();
-        $('.card-text').last().append(patchClone);
+        $('.col-5').last().append(patchClone);
 
     });
 
