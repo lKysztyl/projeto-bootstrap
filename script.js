@@ -27,10 +27,9 @@ $(document).ready(function() {
         const patchClone = picture.clone();
         $('.col-5').last().append(patchClone);
 
-        console.log($('.order-1 > picture').length > 1)
         if ($('.order-1 > picture').length > 1) {
             $('.order-1').find('picture:first-child').remove();
-        }
+        };
     });
 
     $('#form-modal').on('click', function() {
