@@ -25,11 +25,20 @@ $(document).ready(function() {
 
         const picture = $(this).find('picture').first();
         const patchClone = picture.clone();
-        $('.col-5').last().append(patchClone);
+        $('.col-xl-5').last().append(patchClone);
 
-        if ($('.order-1 > picture').length > 1) {
-            $('.order-1').find('picture:first-child').remove();
+        if ($('.order-lg-1 > picture').length > 1) {
+            $('.order-lg-1').find('picture:first-child').remove();
         };
+
+        if (window.screen.width < 550) {
+            let source = $('.order-lg-1 > picture').find('source').eq(3);
+            let srcset = source.attr('srcset');
+            console.log(srcset)
+            srcset = srcset.replace('250x200', '550x350');
+            source.attr('srcset', srcset);
+        };
+        
     });
 
     $('#form-modal').on('click', function() {
