@@ -53,3 +53,17 @@
         font-size: 0.7rem;
     }
 }
+
+@media screen and (max-width: 530px) {
+    .card-title, .card-text {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .card-title, .card-text {
+        font-size: 0.6rem;
+    }
+
+}
