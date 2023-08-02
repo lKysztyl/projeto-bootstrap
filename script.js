@@ -7,6 +7,22 @@ $(document).ready(function() {
         return sifra + replaceString;
     };
 
+    let imgPlaceholder = $('#pizzas').find('source');
+    oldSource = imgPlaceholder.attr('srcset');
+    newSource = oldSource.replace(oldSource, '/img/950x600.jpeg')
+    imgPlaceholder.attr('srcset', newSource);
+
+    let imgPlaceholderHam = $('#hamburguers').find('source');
+    oldSourceHam = imgPlaceholderHam.attr('srcset');
+    newSourceHam = oldSourceHam.replace(oldSourceHam, '/img/grilled-cheeseburger-with-tomato-onion-fries-generated-by-ai.jpg')
+    imgPlaceholderHam.attr('srcset', newSourceHam);
+
+    let imgPlaceholderBe = $('#bebidas').find('source');
+    oldSourceBe = imgPlaceholderBe.attr('srcset');
+    newSourceBe = oldSourceBe.replace(oldSourceBe, '/img/luxury-whiskey-drop-reflects-celebration-bar-generated-by-ai.jpg')
+    imgPlaceholderBe.attr('srcset', newSourceBe);
+    
+
     $('.card-price').each(function() {
         $(this).text(price());
     });
@@ -31,11 +47,11 @@ $(document).ready(function() {
             $('.modal-body').find('.order-1').find('picture:first-child').remove();
         };
 
+        /* legado. usado para da replace a via.placeholder
         if (window.screen.width <= 991) {
             if (window.screen.width <= 400) {
                 let source = $('.order-1 > picture').find('source').eq(3);
                 let srcset = source.attr('srcset');
-                console.log(srcset)
                 srcset = srcset.replace('250x200', '400x200');
                 source.attr('srcset', srcset);
 
@@ -52,6 +68,7 @@ $(document).ready(function() {
                 source.attr('srcset', srcset);
             };
         };
+        */
     });
 
     $('#form-modal').submit(function(e) {
