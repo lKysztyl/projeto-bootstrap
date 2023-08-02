@@ -20,6 +20,14 @@
     color: var(--cor04);
 }
 
+.fs-7 {
+    font-size: 0.6rem;
+}
+
+.de {
+    display: block;
+}
+
 .card {
     cursor: pointer;
 }
@@ -37,9 +45,18 @@
     color: var(--cor03);
 }
 
+#area {
+    resize: none;
+    width: 85%;
+}
+
 @media screen and (min-width: 1200px) {
     .mt-xl-45 {
         margin-top: 1.7rem;
+    }
+
+    #area {
+        width: 100%;
     }
 }
 
@@ -58,12 +75,10 @@
     .card-title, .card-text {
         font-size: 0.8rem;
     }
-
 }
 
 @media screen and (max-width: 380px) {
     .card-title, .card-text {
         font-size: 0.6rem;
     }
-
 }

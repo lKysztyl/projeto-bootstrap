@@ -11,7 +11,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true">
     <div class="translate-middle" id="topPage"></div>
     <header id="header" class="navbar navbar-expand-lg sticky-top bg-cor01">
-    <div class="container">
+        <div class="container">
             <a href="#main" class="navbar-brand text-light">Lorem's Pizza</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -32,9 +32,30 @@
                     </li>
                 </ul>
             </nav>
+            <div class="btn-group" role="group" data-bs-target="#canvasRight" data-bs-toggle="offcanvas">
+                <button class="btn btn-danger" type="button">
+                    <i class="bi bi-cart4"></i>
+                </button>
+                <button class="btn btn-danger btn-store" type="button"></button>
+            </div>
         </div>
     </header>
     <main id="main">
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="canvasRight">
+        <div class="offcanvas-header">
+            <h6 class="offcanvas-title">Lorem ipsum dolor sit amet.</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body store"></div>
+        </div>
+        <div class="toast align-items-center text-bg-success border-0 end-0 position-absolute z-3 bottom-0 position-fixed mb-5" id="toastEnd" role="alert">
+            <div class="d-flex">
+                <div class="toast-body">
+                Um item adicionado com sucesso ao carrinho.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
         <div class="container">
             <section id="carousel">
                 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -110,7 +131,7 @@
                         <div class="tab-pane fade show active mt-3" id="grande-pane" role="tabpanel">
                             <div class="row row-cols-1 row-cols-md-2">
                                 <div class="col p-3">
-                                    <div class="card">
+                                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal">
                                         <div class="row g-0">
                                             <div class="col-7">
                                                 <div class="card-body">
@@ -1492,7 +1513,7 @@
                             <div class="modal-body p-0">
                                 <div class="card">
                                     <div class="row row-cols-1 row-cols-lg-2 g-0">
-                                        <div class="col order-2 order-lg-2">
+                                        <div class="col order-2 d-block">
                                             <div class="card-body">
                                                 <h5 class="card-title"></h5>
                                                 <p class="card-text"></p>
@@ -1500,14 +1521,17 @@
                                             <div class="card-footer bg-white py-md-0 py-xl-3">
                                                 <p class="card-text card-price pt-2 text-success"></p>
                                             </div>
+                                            <div class="form-floating">
+                                                <textarea name="area" id="area" cols="50" rows="auto" class="form-control area me-5 mx-3 my-1 border-secondary-subtle border-2 rounded-3" placeholder="Ex: ipsum, lorem?"></textarea>
+                                                <label for="area" class="form-label ps-4 pt-1">Lorem?</label>
+                                            </div>
                                         </div>
-                                        <div class="col col-xl-5 order-1 order-lg-1"></div>
+                                        <div class="col col-xl-5 order-1"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                            <div class="modal-footer">                     
+                                <button type="submit" class="btn btn-danger">Adicionar</button>
                             </div>
                         </div>
                     </div>
